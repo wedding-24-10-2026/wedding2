@@ -114,14 +114,27 @@
     justify-content:center;
     flex-wrap:wrap;
     gap:34px;
-    padding:34px 24px 26px;
+    padding:14px 24px 26px;
+  }
+
+  .top-title{
+    position:relative;
+    z-index:5;
+    text-align:center;
+    padding:34px 24px 0;
+    font-family:var(--serif);
+    font-weight:600;
+    font-size:clamp(1.9rem, 4.6vw, 3rem);
+    letter-spacing:.08em;
+    color:#F7F3E9;
+    text-shadow:0 2px 18px rgba(0,0,0,.35);
   }
 
   nav.top-nav a{
     color:#F5F0E4;
     font-family:var(--sans);
-    font-weight:400;
-    font-size:11.5px;
+    font-weight:500;
+    font-size:17px;
     letter-spacing:.14em;
     text-transform:uppercase;
     opacity:.92;
@@ -413,6 +426,9 @@
     .countdown-grid{ gap:14px; }
 
     .hero{ min-height:100svh; }
+    nav.top-nav{ gap:12px 20px; padding:12px 16px 20px; }
+    nav.top-nav a{ font-size:14px; letter-spacing:.1em; }
+    .top-title{ padding-top:26px; }
     .hero-scene{ display:none; }
     .hero-scene-mobile{
       display:block;
@@ -652,6 +668,8 @@
     </g>
   </svg>
 
+  <div class="top-title">Банкетный зал «Анталья»</div>
+
   <nav class="top-nav">
     <a href="#invite">Приглашение</a>
     <a href="#rsvp">RSVP</a>
@@ -696,9 +714,8 @@
   <div class="invite-content reveal">
     <h2 class="display">Приглашение</h2>
     <div class="invite-divider"></div>
-    <p>Будем рады видеть вас на торжестве, посвящённом бракосочетанию нашего сына Идриса и Хадижат.</p>
-    <p>Мы бесконечно счастливы пригласить вас стать свидетелями рождения нашей семьи.</p>
-    <p>Мы будем счастливы разделить с вами этот особенный день.</p>
+    <p>Будем рады видеть Вас на торжестве, посвящённом бракосочетанию нашего сына Идриса и Хадижат.</p>
+    <p>Мы счастливы пригласить вас стать свидетелями рождения новой семьи и желаем разделить с вами этот особенный день.</p>
     <p>С уважением,<br>Шурпаевы Шапи и Рукижат</p>
   </div>
 </section>
