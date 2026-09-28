@@ -155,7 +155,7 @@
     align-items:center;
     justify-content:center;
     text-align:center;
-    padding:40px 24px 90px;
+    padding:106px 24px 140px;
     animation:heroReveal 1.4s ease both;
   }
 
@@ -265,7 +265,7 @@
     font-family:var(--serif);
     font-weight:600;
     font-size:clamp(24px, 4.2vw, 32px);
-    line-height:1.7;
+    line-height:1.35;
     color:var(--ink);
     max-width:680px;
     margin:0 auto 22px;
@@ -310,6 +310,8 @@
     letter-spacing:.03em;
     margin-bottom:10px;
   }
+
+  .venue-block.start{ position:relative; top:-28px; }
 
   .venue-block .loc{
     font-family:var(--sans);
@@ -440,7 +442,7 @@
     }
     .hero-center{
       justify-content:flex-start;
-      padding:8vh 24px 40px;
+      padding:calc(8vh + 35px) 24px 40px;
     }
     .hero-center .names{ font-size:clamp(2.3rem, 11vw, 3.4rem); }
 
@@ -542,7 +544,7 @@
   }
   .scroll-hint span{
     font-family:var(--sans);
-    font-size:17px;
+    font-size:16px;
     letter-spacing:.22em;
     text-transform:uppercase;
   }
@@ -563,7 +565,7 @@
   .invite, .countdown, .venue-info{ position:relative; }
   @media (max-width:640px){
     .scroll-hint{ bottom:22px; }
-    .scroll-hint span{ font-size:15px; }
+    .scroll-hint span{ font-size:14px; }
   }
 
 </style>
@@ -673,11 +675,6 @@
 
   <div class="top-title">Банкетный зал «Анталья»</div>
 
-  <nav class="top-nav">
-    <a href="#invite">Приглашение</a>
-    <a href="#rsvp">RSVP</a>
-    <a href="#venue">Важные места</a>
-  </nav>
 
   <div class="hero-center">
     <div class="names display">Идрис<span class="amp"> и </span>Хадижат</div>
@@ -746,7 +743,7 @@
         </div>
       </div>
     </div>
-    <div class="venue-block">
+    <div class="venue-block start">
       <h3 class="display">Начало в 14:00</h3>
     </div>
     <div class="scroll-hint">
