@@ -542,7 +542,7 @@
   }
   .scroll-hint span{
     font-family:var(--sans);
-    font-size:12px;
+    font-size:17px;
     letter-spacing:.22em;
     text-transform:uppercase;
   }
@@ -559,8 +559,11 @@
     from{ opacity:0; }
     to{ opacity:.95; }
   }
+  .scroll-hint.dark{ color:var(--ink); text-shadow:none; }
+  .invite, .countdown, .venue-info{ position:relative; }
   @media (max-width:640px){
     .scroll-hint{ bottom:22px; }
+    .scroll-hint span{ font-size:15px; }
   }
 
 </style>
@@ -718,6 +721,13 @@
     <p>Мы счастливы пригласить вас стать свидетелями рождения новой семьи и желаем разделить с вами этот особенный для нас день.</p>
     <p>С уважением,<br>Шурпаевы Шапи и Рукижат</p>
   </div>
+  <div class="scroll-hint dark">
+    <span>Листайте вниз</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 4v15"/>
+      <path d="M6 13l6 6 6-6"/>
+    </svg>
+  </div>
 </section>
 
 <section class="venue" id="venue">
@@ -739,7 +749,14 @@
     <div class="venue-block">
       <h3 class="display">Начало в 14:00</h3>
     </div>
+    <div class="scroll-hint">
+    <span>Листайте вниз</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 4v15"/>
+      <path d="M6 13l6 6 6-6"/>
+    </svg>
   </div>
+</div>
 
   <div class="venue-scene">
     <div class="venue-frame"></div>
@@ -819,6 +836,13 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="scroll-hint dark">
+    <span>Листайте вниз</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 4v15"/>
+      <path d="M6 13l6 6 6-6"/>
+    </svg>
   </div>
 </section>
 
