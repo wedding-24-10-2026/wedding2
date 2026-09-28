@@ -165,7 +165,7 @@
   }
 
   .hero-center .names{
-    font-size:clamp(2.6rem, 7vw, 5.2rem);
+    font-size:clamp(calc(2.6rem + 1pt), calc(7vw + 1pt), calc(5.2rem + 1pt));
     letter-spacing:.05em;
     line-height:1.05;
     text-shadow:0 2px 24px rgba(0,0,0,.25);
@@ -216,7 +216,7 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    padding:110px 28px;
+    padding:40px 28px 180px;
   }
 
   .invite-botanical{
@@ -271,6 +271,8 @@
     margin:0 auto 22px;
   }
 
+  .invite-content .inv-names{ font-size:calc(1em + 1pt); }
+
   .invite-content p:last-child{ margin-bottom:0; }
 
   /* =========================================================
@@ -290,13 +292,13 @@
     display:flex;
     flex-direction:column;
     justify-content:center;
-    padding:80px 60px;
+    padding:50px 60px 170px;
     gap:56px;
   }
 
   .venue-info .kicker{
     font-family:var(--sans);
-    font-size:12px;
+    font-size:calc(12px + 2pt);
     letter-spacing:.24em;
     text-transform:uppercase;
     color:var(--rose);
@@ -306,7 +308,7 @@
   .venue-block h3{
     font-family:var(--serif);
     font-weight:500;
-    font-size:26px;
+    font-size:calc(26px + 2pt);
     letter-spacing:.03em;
     margin-bottom:10px;
   }
@@ -316,7 +318,7 @@
   .venue-block .loc{
     font-family:var(--sans);
     font-weight:300;
-    font-size:14px;
+    font-size:calc(14px + 2pt);
     letter-spacing:.03em;
     color:#CFC9B4;
     line-height:1.7;
@@ -369,7 +371,7 @@
   .countdown-inner h2{
     font-family:var(--serif);
     font-weight:500;
-    font-size:clamp(1.7rem, 4vw, 2.5rem);
+    font-size:clamp(calc(1.7rem + 2pt), calc(4vw + 2pt), calc(2.5rem + 2pt));
     letter-spacing:.09em;
     color:var(--ink);
     margin-bottom:20px;
@@ -422,8 +424,8 @@
   }
 
   @media (max-width:640px){
-    .venue-info{ padding:70px 34px; gap:44px; }
-    .invite{ padding:90px 22px; }
+    .venue-info{ padding:40px 34px 160px; gap:44px; }
+    .invite{ padding:30px 22px 170px; }
     .countdown{ padding:90px 18px; }
     .countdown-grid{ gap:14px; }
 
@@ -444,7 +446,7 @@
       justify-content:flex-start;
       padding:calc(8vh + 35px) 24px 40px;
     }
-    .hero-center .names{ font-size:clamp(2.3rem, 11vw, 3.4rem); }
+    .hero-center .names{ font-size:clamp(calc(2.3rem + 1pt), calc(11vw + 1pt), calc(3.4rem + 1pt)); }
 
     .venue-scene{ display:none; }
     .venue{ min-height:auto; }
@@ -511,7 +513,7 @@
     margin-top: 16px;
     padding: 12px 28px;
     font-family: var(--sans);
-    font-size: 10px;
+    font-size: calc(10px + 2pt);
     letter-spacing: .2em;
     text-transform: uppercase;
     color: var(--green-cream);
@@ -714,7 +716,7 @@
   <div class="invite-content reveal">
     <h2 class="display">Приглашение</h2>
     <div class="invite-divider"></div>
-    <p>Будем рады видеть Вас на торжестве, посвящённом бракосочетанию нашего сына Идриса и Хадижат.</p>
+    <p>Будем рады видеть Вас на торжестве, посвящённом бракосочетанию нашего сына <span class="inv-names">Идриса и Хадижат</span>.</p>
     <p>Мы счастливы пригласить вас стать свидетелями рождения новой семьи и желаем разделить с вами этот особенный для нас день.</p>
     <p>С уважением,<br>Шурпаевы Шапи и Рукижат</p>
   </div>
